@@ -7,7 +7,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Symbole"/>
   <eClassifiers xsi:type="ecore:EClass" name="Ruban">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="list_symbole" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listSymbole" upperBound="-1"
         eType="#//Alphabet"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Registre">

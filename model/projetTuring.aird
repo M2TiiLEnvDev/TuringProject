@@ -266,9 +266,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ZgOD0KsYEeazXIFAYhCOAQ" name="[0..*] list_symbole" sourceNode="_PaCeAKsYEeazXIFAYhCOAQ" targetNode="_fKsIwKsXEeazXIFAYhCOAQ">
-        <target xmi:type="ecore:EReference" href="projetTuring.ecore#//Ruban/list_symbole"/>
-        <semanticElements xmi:type="ecore:EReference" href="projetTuring.ecore#//Ruban/list_symbole"/>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ZgOD0KsYEeazXIFAYhCOAQ" name="[0..*] listSymbole" sourceNode="_PaCeAKsYEeazXIFAYhCOAQ" targetNode="_fKsIwKsXEeazXIFAYhCOAQ">
+        <target xmi:type="ecore:EReference" href="projetTuring.ecore#//Ruban/listSymbole"/>
+        <semanticElements xmi:type="ecore:EReference" href="projetTuring.ecore#//Ruban/listSymbole"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ZgOD0asYEeazXIFAYhCOAQ" routingStyle="manhattan">
           <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_ZgOD0qsYEeazXIFAYhCOAQ"/>
