@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ProjetTuring/src" modelPluginID="ProjetTuring"
+    modelName="ProjetTuring" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>projetTuring.ecore</foreignModel>
+  <genPackages prefix="ProjetTuring" disposableProviderFactory="true" ecorePackage="projetTuring.ecore#/">
+    <genClasses ecoreClass="projetTuring.ecore#//Alphabet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Alphabet/symboles"/>
+    </genClasses>
+    <genClasses ecoreClass="projetTuring.ecore#//Symbole"/>
+    <genClasses ecoreClass="projetTuring.ecore#//Ruban">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Ruban/list_symbole"/>
+    </genClasses>
+    <genClasses ecoreClass="projetTuring.ecore#//Registre">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Registre/etatCourant"/>
+    </genClasses>
+    <genClasses ecoreClass="projetTuring.ecore#//Etat"/>
+    <genClasses ecoreClass="projetTuring.ecore#//TableActions"/>
+    <genClasses ecoreClass="projetTuring.ecore#//vMachineTuring">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/ruban"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/tableAction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/registre"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

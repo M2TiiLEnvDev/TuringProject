@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="projetTuring" nsURI="http://www.example.org/projetTuring" nsPrefix="projetTuring">
+  <eClassifiers xsi:type="ecore:EClass" name="Alphabet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="symboles" upperBound="-1"
+        eType="#//Symbole" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Symbole"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Ruban">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list_symbole" upperBound="-1"
+        eType="#//Alphabet"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Registre">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="etatCourant" lowerBound="1"
+        eType="#//Etat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Etat"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TableActions"/>
+  <eClassifiers xsi:type="ecore:EClass" name="vMachineTuring">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ruban" eType="#//Ruban"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tableAction" eType="#//TableActions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="registre" eType="#//Registre"/>
+  </eClassifiers>
+</ecore:EPackage>
