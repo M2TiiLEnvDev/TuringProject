@@ -6,22 +6,42 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>projetTuring.ecore</foreignModel>
   <genPackages prefix="ProjetTuring" disposableProviderFactory="true" ecorePackage="projetTuring.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="projetTuring.ecore#//Mouvement">
+      <genEnumLiterals ecoreEnumLiteral="projetTuring.ecore#//Mouvement/Arret"/>
+      <genEnumLiterals ecoreEnumLiteral="projetTuring.ecore#//Mouvement/Gauche"/>
+      <genEnumLiterals ecoreEnumLiteral="projetTuring.ecore#//Mouvement/Droite"/>
+    </genEnums>
     <genClasses ecoreClass="projetTuring.ecore#//Alphabet">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Alphabet/symboles"/>
     </genClasses>
-    <genClasses ecoreClass="projetTuring.ecore#//Symbole"/>
+    <genClasses ecoreClass="projetTuring.ecore#//Symbole">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetTuring.ecore#//Symbole/caractere"/>
+    </genClasses>
     <genClasses ecoreClass="projetTuring.ecore#//Ruban">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Ruban/listSymbole"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetTuring.ecore#//Ruban/teteLecture"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/alphabet"/>
     </genClasses>
     <genClasses ecoreClass="projetTuring.ecore#//Registre">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Registre/etatCourant"/>
     </genClasses>
-    <genClasses ecoreClass="projetTuring.ecore#//Etat"/>
-    <genClasses ecoreClass="projetTuring.ecore#//TableActions"/>
+    <genClasses ecoreClass="projetTuring.ecore#//Etat">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetTuring.ecore#//Etat/nom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Action/etat"/>
+    </genClasses>
+    <genClasses ecoreClass="projetTuring.ecore#//TableActions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetTuring.ecore#//TableActions/actions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Action/symbole"/>
+    </genClasses>
     <genClasses ecoreClass="projetTuring.ecore#//vMachineTuring">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/ruban"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/tableAction"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/ruban"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/tableAction"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/registre"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/alphabet"/>
+    </genClasses>
+    <genClasses ecoreClass="projetTuring.ecore#//Action">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Action/symbole"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projetTuring.ecore#//Action/mouvement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Action/etat"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
