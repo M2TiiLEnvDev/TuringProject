@@ -11,6 +11,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Ruban">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="teteLecture" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cases" upperBound="-1"
+        eType="#//Case" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Registre">
     <eStructuralFeatures xsi:type="ecore:EReference" name="etatCourant" lowerBound="1"
@@ -29,21 +31,27 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="tableAction" lowerBound="1"
         eType="#//TableActions" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="registre" lowerBound="1"
-        eType="#//Registre"/>
+        eType="#//Registre" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="alphabet" lowerBound="1"
         eType="#//Alphabet" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Action">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="symbole" lowerBound="2"
-        upperBound="2" eType="#//Symbole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lu" lowerBound="1" eType="#//Symbole"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mouvement" eType="#//Mouvement"
         defaultValueLiteral="Arret"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="etat" lowerBound="2" upperBound="2"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="etatCourant" lowerBound="1"
+        eType="#//Etat"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ecrit" lowerBound="1" eType="#//Symbole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="etatSuivant" lowerBound="1"
         eType="#//Etat"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Mouvement">
     <eLiterals name="Arret"/>
     <eLiterals name="Gauche"/>
     <eLiterals name="Droite"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Case">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pointeSur" lowerBound="1"
+        eType="#//Symbole"/>
   </eClassifiers>
 </ecore:EPackage>
