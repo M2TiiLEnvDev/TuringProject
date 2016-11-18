@@ -6,13 +6,20 @@
     xmlns:turing="http://fr.ubo.turing"
     xsi:schemaLocation="http://fr.ubo.turing projetTuring.ecore">
   <ruban>
-    <cases/>
+    <cases pointeSur="//@alphabet/@symboles.0"/>
+    <cases pointeSur="//@alphabet/@symboles.0"/>
   </ruban>
-  <tableAction>
-    <actions/>
-  </tableAction>
-  <registre/>
+  <tableAction/>
+  <registre
+      etatCourant="//@listeEtats.0"/>
   <alphabet>
-    <symboles/>
+    <symboles
+        caractere="97"/>
+    <symboles
+        caractere="98"/>
   </alphabet>
+  <listeEtats
+      nom="e0"/>
+  <listeEtats
+      nom="e1"/>
 </turing:vMachineTuring>

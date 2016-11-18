@@ -38,6 +38,7 @@
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/tableAction"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/registre"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/alphabet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference projetTuring.ecore#//vMachineTuring/listeEtats"/>
     </genClasses>
     <genClasses ecoreClass="projetTuring.ecore#//Action">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference projetTuring.ecore#//Action/lu"/>
