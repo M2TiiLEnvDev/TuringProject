@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
-<turing:vMachineTuring
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:turing="http://fr.ubo.turing"
-    xsi:schemaLocation="http://fr.ubo.turing projetTuring.ecore">
+<turing:vMachineTuring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:turing="http://fr.ubo.turing" xsi:schemaLocation="http://fr.ubo.turing projetTuring.ecore">
   <ruban>
     <cases pointeSur="//@alphabet/@symboles.0"/>
     <cases pointeSur="//@alphabet/@symboles.0"/>
   </ruban>
   <tableAction/>
-  <registre
-      etatCourant="//@listeEtats.0"/>
+  <registre etatCourant="//@listeEtats.0"/>
   <alphabet>
-    <symboles
-        caractere="97"/>
-    <symboles
-        caractere="98"/>
+    <symboles caractere="97"/>
+    <symboles caractere="98"/>
   </alphabet>
-  <listeEtats
-      nom="e0"/>
-  <listeEtats
-      nom="e1"/>
+  <listeEtats nom="e0"/>
+  <listeEtats nom="e1"/>
 </turing:vMachineTuring>
