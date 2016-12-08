@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="ASCII"?>
-<projetTuring:vMachineTuring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:projetTuring="http://www.example.org/projetTuring"
-    xsi:schemaLocation="http://www.example.org/projetTuring projetTuring.ecore"/>
+<turing:vMachineTuring
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:turing="http://fr.ubo.turing"
+    xsi:schemaLocation="http://fr.ubo.turing projetTuring.ecore">
+  <ruban>
+    <cases pointeSur="//@alphabet/@symboles.1"/>
+    <cases pointeSur="//@alphabet/@symboles.2"/>
+  </ruban>
+  <tableAction/>
+  <registre
+      etatCourant="//@listeEtats.1"/>
+  <alphabet>
+    <symboles/>
+    <symboles
+        caractere="97"/>
+    <symboles
+        caractere="98"/>
+  </alphabet>
+  <listeEtats
+      nom="e2"/>
+  <listeEtats
+      nom="e1"/>
+</turing:vMachineTuring>
